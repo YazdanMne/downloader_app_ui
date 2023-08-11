@@ -36,6 +36,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_svg: ^2.0.7
+  flutter_screenutil: ^5.8.4
+  google_mobile_ads : ^1.0.0
+
 
 dev_dependencies:
   flutter_test:
@@ -76,22 +79,41 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: LGB
+    - family: MB
       fonts:
-        - asset: assets/fonts/lg_bold.ttf
-  
-    - family: LGL
+        - asset: assets/fonts/manrope_bold.ttf
+        - weight: 700
+    
+    - family: MEB
       fonts:
-        - asset: assets/fonts/lg_light.ttf
-  
-    - family: LGR
+        - asset: assets/fonts/manrope_extra_bold.ttf
+        - weight: 800
+    
+    - family: MEL
       fonts:
-        - asset: assets/fonts/lg_regular.ttf
-  
-    - family: LGSB
+        - asset: assets/fonts/manrope_extra_light.ttf
+        - weight: 200
+    
+    - family: ML
       fonts:
-        - asset: assets/fonts/lg_semi_bold.ttf
-  
+        - asset: assets/fonts/manrope_light.ttf
+        - weight: 300
+    
+    - family: MM
+      fonts:
+        - asset: assets/fonts/manrope_medium.ttf
+        - weight: 500
+    
+    - family: MR
+      fonts:
+        - asset: assets/fonts/manrope_regular.ttf
+        - weight: 400
+    
+    - family: MSB
+      fonts:
+        - asset: assets/fonts/manrope_semi_bold.ttf
+        - weight: 600
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
