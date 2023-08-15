@@ -1,4 +1,5 @@
 import 'package:downloader_pro/constants/my_color.dart';
+import 'package:downloader_pro/pages/home_page_two.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -100,39 +101,49 @@ class HomePageOne extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Container(
-                              padding: EdgeInsets.symmetric(
-                                  horizontal: 16.w, vertical: 16.h),
-                              decoration: ShapeDecoration(
-                                color: Colors.white,
-                                shape: RoundedRectangleBorder(
-                                  side: const BorderSide(
-                                      width: 1, color: SolidColor.rhinoDark50),
-                                  borderRadius: BorderRadius.circular(12.r),
+                            InkWell(
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (_) => const HomePageTwo(),
+                                  ),
+                                );
+                              },
+                              child: Container(
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: 16.w, vertical: 16.h),
+                                decoration: ShapeDecoration(
+                                  color: Colors.white,
+                                  shape: RoundedRectangleBorder(
+                                    side: const BorderSide(
+                                        width: 1,
+                                        color: SolidColor.rhinoDark50),
+                                    borderRadius: BorderRadius.circular(12.r),
+                                  ),
                                 ),
-                              ),
-                              child: Center(
-                                child: Row(
-                                  children: [
-                                    SvgPicture.asset(
-                                      'assets/images/instagram.svg',
-                                      width: 32.w,
-                                      height: 32.h,
-                                    ),
-                                    SizedBox(width: 10.w),
-                                    SizedBox(
-                                      width: 80.w,
-                                      child: Text(
-                                        'Instagram',
-                                        style: TextStyle(
-                                          color: SolidColor.rhino500,
-                                          fontSize: 14.sp,
-                                          fontFamily: 'MB',
-                                          letterSpacing: -0.14,
+                                child: Center(
+                                  child: Row(
+                                    children: [
+                                      SvgPicture.asset(
+                                        'assets/images/instagram.svg',
+                                        width: 32.w,
+                                        height: 32.h,
+                                      ),
+                                      SizedBox(width: 10.w),
+                                      SizedBox(
+                                        width: 80.w,
+                                        child: Text(
+                                          'Instagram',
+                                          style: TextStyle(
+                                            color: SolidColor.rhino500,
+                                            fontSize: 14.sp,
+                                            fontFamily: 'MB',
+                                            letterSpacing: -0.14,
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),

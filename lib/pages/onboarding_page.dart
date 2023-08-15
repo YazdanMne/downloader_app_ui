@@ -32,12 +32,15 @@ class _OnboardingPageState extends State<OnboardingPage> {
             ),
           ),
           Center(
-            child: PageView(
-              children: const [
-                OnboardingOne(),
-                OnboardingTwo(),
-                OnboardingThree(),
-              ],
+            child: SizedBox(
+              height: double.infinity,
+              child: PageView(
+                children: const [
+                  OnboardingOne(),
+                  OnboardingTwo(),
+                  OnboardingThree(),
+                ],
+              ),
             ),
           ),
         ],

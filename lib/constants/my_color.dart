@@ -7,4 +7,10 @@ class SolidColor {
   static const Color rhino600 = Color(0xFF27364E);
   static const Color rhino500 = Color(0xff2C4364);
   static const Color rhinoDark50 = Color(0xFFEAECF0);
+  static const Color rhinoDark200 = Color(0xffADB4C0);
+  static const Color rhinoDark300 = Color(0xFFEAECF0);
+  static const Color rhinoDark500 = Color(0xFF2C4364);
+  static const Color rhinoDark600 = Color(0xff27364E);
+  static const Color border = Color(0xffEAECF0);
+  static const Color shadow = Color(0xff5D6976);
 }

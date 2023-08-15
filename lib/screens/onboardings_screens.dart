@@ -1,4 +1,4 @@
-import 'package:downloader_pro/pages/home_page_one.dart';
+import 'package:downloader_pro/widgets/bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -380,7 +380,8 @@ class OnboardingThree extends StatelessWidget {
                         onTap: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
-                              builder: (_) => const HomePageOne(),
+                              builder: (_) =>
+                                  const CustomeBottomNavigaitonBar(),
                             ),
                           );
                         },
