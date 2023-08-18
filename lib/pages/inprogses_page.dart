@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../constants/my_color.dart';
+import '../widgets/video_box_widget.dart';
 
 class InProgsesPage extends StatelessWidget {
   const InProgsesPage({super.key});
@@ -58,11 +59,29 @@ class InProgsesPage extends StatelessWidget {
                 child: Column(
                   children: [
                     Padding(
-                      padding:
-                          EdgeInsets.only(top: 24.h, left: 24.w, right: 24.w),
+                      padding: EdgeInsets.only(left: 24.w, right: 24.w),
                       child: Center(
                         child: Column(
-                          children: [],
+                          children: [
+                            SizedBox(
+                              width: 327.w,
+                              height: 650.h,
+                              child: ListView.builder(
+                                padding: EdgeInsets.only(top: 1.h),
+                                itemCount: 4,
+                                itemBuilder: (context, index) {
+                                  return Column(
+                                    children: [
+                                      SizedBox(height: 20.h),
+                                      const VideoBox(),
+                                      SizedBox(height: 20.h),
+                                      const Divider(height: 1.0),
+                                    ],
+                                  );
+                                },
+                              ),
+                            )
+                          ],
                         ),
                       ),
                     ),

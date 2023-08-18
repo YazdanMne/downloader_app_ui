@@ -150,14 +150,14 @@ class _HomePageTwoState extends State<HomePageTwo> {
                                   setState(() {
                                     isTextFieldEmpty = text.isEmpty;
                                     buttonColor = isTextFieldEmpty
-                                        ? SolidColor.rhinoDark300
+                                        ? const Color(0xFFEAECF0)
                                         : SolidColor.rhinoDark500;
 
                                     buttonTextColor = isTextFieldEmpty
                                         ? const Color(0xFF838FA0)
                                         : Colors.white;
                                     prefixIconColor = isTextFieldEmpty
-                                        ? SolidColor.rhinoDark200
+                                        ? SolidColor.rhinoDark300
                                         : SolidColor.rhinoDark600;
                                   });
                                 },

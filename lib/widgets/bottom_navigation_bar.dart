@@ -4,6 +4,7 @@ import 'package:downloader_pro/pages/home_page_one.dart';
 import 'package:downloader_pro/pages/inprogses_page.dart';
 import 'package:downloader_pro/pages/settings_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
 class CustomeBottomNavigaitonBar extends StatefulWidget {
@@ -36,15 +37,10 @@ class _CustomeBottomNavigaitonBarState
           type: BottomNavigationBarType.fixed,
           backgroundColor: Colors.white,
           elevation: 0,
-          unselectedLabelStyle: const TextStyle(
-            fontSize: 12,
+          selectedItemColor: SolidColor.rhinoDark500,
+          selectedLabelStyle: TextStyle(
             fontFamily: 'msb',
-            color: SolidColor.rhinoDark200,
-          ),
-          selectedLabelStyle: const TextStyle(
-            fontSize: 12,
-            fontFamily: 'msb',
-            color: SolidColor.rhinoDark500,
+            fontSize: 12.sp,
           ),
           items: [
             BottomNavigationBarItem(

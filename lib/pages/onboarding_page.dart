@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../constants/my_color.dart';
 import '../screens/onboardings_screens.dart';
@@ -13,27 +14,28 @@ class OnboardingPage extends StatefulWidget {
 class _OnboardingPageState extends State<OnboardingPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: [
-          Container(
-            height: double.infinity,
-            width: double.infinity,
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topRight,
-                end: Alignment.bottomLeft,
-                colors: [
-                  SolidColor.orange200,
-                  SolidColor.orange50,
-                  SolidColor.orange50,
-                ],
+    return SizedBox(
+      width: 375.w,
+      height: 812.h,
+      child: Scaffold(
+        body: Stack(
+          children: [
+            Container(
+              height: double.infinity,
+              width: double.infinity,
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topRight,
+                  end: Alignment.bottomLeft,
+                  colors: [
+                    SolidColor.orange200,
+                    SolidColor.orange50,
+                    SolidColor.orange50,
+                  ],
+                ),
               ),
             ),
-          ),
-          Center(
-            child: SizedBox(
-              height: double.infinity,
+            Center(
               child: PageView(
                 children: const [
                   OnboardingOne(),
@@ -42,8 +44,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
                 ],
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
