@@ -16,30 +16,6 @@ class OnboardingOne extends StatelessWidget {
       padding: EdgeInsets.only(top: 60.h),
       child: Column(
         children: [
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 32.w),
-            child: Container(
-              width: double.infinity,
-              height: 6.h,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.all(Radius.circular(20.r)),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Container(
-                    width: 110.w,
-                    height: double.infinity,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(20.r)),
-                      color: SolidColor.orange500,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
           SizedBox(height: 32.h),
           Text(
             'Easy\nDownloading',
@@ -98,8 +74,7 @@ class OnboardingOne extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
-                          right: 24.w, left: 24.w, bottom: 24.h),
+                      padding: EdgeInsets.only(right: 24.w, left: 24.w),
                       child: Container(
                         width: double.infinity,
                         height: 50.h,
@@ -154,30 +129,6 @@ class OnboardingTwo extends StatelessWidget {
       padding: EdgeInsets.only(top: 60.h),
       child: Column(
         children: [
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 32.w),
-            child: Container(
-              width: double.infinity,
-              height: 6.h,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.all(Radius.circular(20.r)),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    width: 110.w,
-                    height: double.infinity,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(20.r)),
-                      color: SolidColor.orange500,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
           SizedBox(height: 32.h),
           Text(
             'Seamless\nIntegration',
@@ -236,8 +187,7 @@ class OnboardingTwo extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
-                          right: 24.w, left: 24.w, bottom: 24.h),
+                      padding: EdgeInsets.only(right: 24.w, left: 24.w),
                       child: Container(
                         width: double.infinity,
                         height: 50.h,
@@ -292,30 +242,6 @@ class OnboardingThree extends StatelessWidget {
       padding: EdgeInsets.only(top: 60.h),
       child: Column(
         children: [
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 32.w),
-            child: Container(
-              width: double.infinity,
-              height: 6.h,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.all(Radius.circular(20.r)),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    width: 110.w,
-                    height: double.infinity,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(20.r)),
-                      color: SolidColor.orange500,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
           SizedBox(height: 32.h),
           Text(
             'Eye-friendly\nViewing',
@@ -374,8 +300,7 @@ class OnboardingThree extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
-                          right: 24.w, left: 24.w, bottom: 24.h),
+                      padding: EdgeInsets.only(right: 24.w, left: 24.w),
                       child: InkWell(
                         onTap: () {
                           Navigator.of(context).push(

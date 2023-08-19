@@ -15,7 +15,7 @@ class HomePageTwo extends StatefulWidget {
 
 class _HomePageTwoState extends State<HomePageTwo> {
   bool isTextFieldEmpty = true;
-  Color buttonColor = SolidColor.rhinoDark300;
+  Color buttonColor = const Color(0xFFEAECF0);
   Color buttonTextColor = const Color(0xFF838FA0);
   Color prefixIconColor = SolidColor.rhinoDark200;
   @override
@@ -151,7 +151,7 @@ class _HomePageTwoState extends State<HomePageTwo> {
                                     isTextFieldEmpty = text.isEmpty;
                                     buttonColor = isTextFieldEmpty
                                         ? const Color(0xFFEAECF0)
-                                        : SolidColor.rhinoDark500;
+                                        : const Color(0xFF2C4364);
 
                                     buttonTextColor = isTextFieldEmpty
                                         ? const Color(0xFF838FA0)

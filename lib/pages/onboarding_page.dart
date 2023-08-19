@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../constants/my_color.dart';
 import '../screens/onboardings_screens.dart';
@@ -12,6 +13,7 @@ class OnboardingPage extends StatefulWidget {
 }
 
 class _OnboardingPageState extends State<OnboardingPage> {
+  final controller = PageController();
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -36,14 +38,34 @@ class _OnboardingPageState extends State<OnboardingPage> {
               ),
             ),
             Center(
-              child: PageView(
-                children: const [
-                  OnboardingOne(),
-                  OnboardingTwo(),
-                  OnboardingThree(),
-                ],
+              child: PageView.builder(
+                controller: controller,
+                itemCount: 3,
+                itemBuilder: (context, index) {
+                  if (index == 0) {
+                    return const OnboardingOne();
+                  } else if (index == 1) {
+                    return const OnboardingTwo();
+                  } else if (index == 2) {
+                    return const OnboardingThree();
+                  }
+                  return Container();
+                },
               ),
             ),
+            Positioned(
+              top: 65.h,
+              right: 150.w,
+              left: 150.w,
+              child: SmoothPageIndicator(
+                  controller: controller, // PageController
+                  count: 3,
+                  effect: const ExpandingDotsEffect(
+                    dotColor: Colors.white,
+                    activeDotColor: SolidColor.orange500,
+                  ), // your preferred effect
+                  onDotClicked: (index) {}),
+            )
           ],
         ),
       ),
